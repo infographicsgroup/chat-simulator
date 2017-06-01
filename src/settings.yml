@@ -1,0 +1,6 @@
+author:
+  name: Jonas Parnow
+  url: http://jonasparnow.de/
+list:
+  - Hot Module Replacement with Jade files (<a href="https://github.com/ampedandwired/html-webpack-plugin/issues/232">Issue</a>)
+  - Jade expressions in variables (<a href="https://github.com/pugjs/jade/issues/1830">Issue</a>)

@@ -1,0 +1,13 @@
+/* Fonts */
+$font-default: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+/* Colours */
+$color-font-default: rgb(34, 34, 34);
+$color-link-default: rgb(22, 147, 165);
+$color-link-default-hover: darken($color-link-default, 10%);
+
+/* Weights */
+$weight-default: 300;
+
+/* Margins */
+$margin-default: 1em;
