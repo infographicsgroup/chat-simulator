@@ -1,0 +1,74 @@
+- var props = require("json!yaml!./settings.yml")
+
+doctype html(lang='en')
+head
+  meta(charset='utf-8')
+  meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+  title Happiness index
+  meta(name='viewport', content='width=device-width, initial-scale=1')
+body
+  .screen
+    header
+      span.button
+        svg
+          polygon(points="20.5,41 25.3,36.2 9.6,20.5 25.3,4.8 20.5,0 0,20.5", fill="#3a70b7")
+      img(src="https://emojipedia-us.s3.amazonaws.com:443/cache/da/64/da64b659877e1959a41cdbac765ef6b2.png")
+      hgroup
+        h1 Emoji statistics
+        h2 Tab here for group info
+    div.chat
+      article
+        section.message.right
+          p Hey!
+            br
+            | Do you know where on earth people are most satisfied with their job? And where the least?
+          span.up 12:20
+          div.bubble-arrow
+      article
+        section.message.person2.wider
+          h1 Emoji-Bot 🤖
+          p Sure! 
+            em 🤓 
+            | Here we go …
+          span.up 12:27
+      article
+        section.message.person2.wider.contious
+          p
+            em 😶 
+            | = 10% of the population
+          span 12:29
+      article
+        section.message.person2.wider.contious
+          p
+            em 🇦🇹 😄😄😄😄😄😄😄😄😄😡
+            br
+            em 🇱🇸 😄😄😄😄😡😡😡😡😡😡
+            div.bubble-arrow
+          span 12:29
+      article
+        section.message.right
+          p
+            em 🇱🇸 
+            | ?
+          span 12:20
+          div.bubble-arrow
+      article
+        section.message.person2.wider
+          h1 Emoji-Bot 🤖
+          p That’s Lesotho 
+            em 🤓
+          span 12:30
+          div.bubble-arrow
+      article
+        section.message.right
+          p The highest job satisfaction is in Austria? Really? 
+            em 🤔
+          span.up 12:20
+          div.bubble-arrow
+      article
+        section.message.person2.wider
+          h1 Emoji-Bot 🤖
+          p Well, yes – that’s what the „Gallup World Poll“ says! 
+            em 📊
+          span 12:30
+          div.bubble-arrow

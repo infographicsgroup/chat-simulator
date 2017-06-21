@@ -28,6 +28,22 @@ module.exports = (options) => {
       }),
       new HtmlWebpackPlugin({
         template: "jade!./src/index.jade"
+      }),
+      new HtmlWebpackPlugin({
+        filename: 'pandas.html',
+        template: "jade!./src/pandas.jade"
+      }),
+      new HtmlWebpackPlugin({
+        filename: 'drugs.html',
+        template: "jade!./src/drugs.jade"
+      }),
+      new HtmlWebpackPlugin({
+        filename: 'happy.html',
+        template: "jade!./src/happy.jade"
+      }),
+      new HtmlWebpackPlugin({
+        filename: 'population.html',
+        template: "jade!./src/population.jade"
       })
     ],
     module: {
