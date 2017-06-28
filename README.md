@@ -45,11 +45,12 @@ article
 The message can have the following classes to modify the **color of the author**:
 
 ```
-.person2
-.person3
-.person4
-.person5
+.person1
+…
+.person20
 ```
+
+The default color and `.person1` have the same color.
 
 To change the **side of the message** the class `.right` can be used.
 
