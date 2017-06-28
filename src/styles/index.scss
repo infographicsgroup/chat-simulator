@@ -8,6 +8,11 @@ body {
   margin: $margin-default;
 }
 
+a {
+  color: #000;
+  text-decoration: none;
+}
+
 .screen {
   width: 719px;
   height: auto;
@@ -21,9 +26,9 @@ body {
     border-bottom: 1px solid #b6b6b6;
 
     span.button {
-      margin-left: 16px;
+      margin-left: 20px;
       width: 24px;
-      margin-right: 53px;
+      margin-right: 50px;
       color: #0078f4;
       margin-top: 12px;
     }
@@ -57,7 +62,7 @@ body {
 
       h2 {
         margin-top: 3px;
-        font-weight: 200;
+        font-weight: 300;
         font-size: 23px;
         word-spacing: 0.02em;
         letter-spacing: 0.07em;
@@ -68,7 +73,7 @@ body {
 
   .chat {
     margin-top: 12px;
-    padding-bottom: 12px;
+    padding-bottom: 24px;
 
     article {
       width: 100%;
@@ -106,28 +111,32 @@ body {
       padding-right: auto;
       position: relative;
 
-      &.wider {
-        padding-right: 80px;
-      }
+        &.wider {
+          padding-right: 80px;
+        }
 
-      .bubble-arrow {
-        position: absolute;
-        width: 0;
-        bottom: 50px;
-        left: -25px;
-        height: 0;
-      }
+        &.arrow::before {
+          z-index: 1;
+          background-color: #fff;
+          content: "\00a0";
+          display: block;
+          height: 16px;
+          position: absolute;
+          bottom: 11px;
+          transform:         rotate( 0deg ) skew( -50deg );
+          -moz-transform:    rotate( 0deg ) skew( -50deg );
+          -ms-transform:     rotate( 0deg ) skew( -50deg );
+          -o-transform:      rotate( 0deg ) skew( -50deg );
+          -webkit-transform: rotate( 0deg ) skew( -50deg );
+          width: 20px;
+          box-shadow: -1px 1.5px 1px 0 rgba(0, 0, 6, 0.1);
+          left: -9px;
+        }
 
-      .bubble-arrow:after {
-        content: "";
-        position: absolute;
-        border: 0 solid transparent;
-        border-top: 9px solid #fff;
-        border-radius: 0 20px 0;
-        width: 30px;
-        height: 30px;
-        transform: rotate(145deg);
-      }
+        & > * {
+          position: relative;
+          z-index: 2;
+        }
 
       h1 {
         margin: 0;
@@ -213,8 +222,8 @@ body {
         right: -80px;
       }
 
-      &.contious {
-        margin-top: 4px !important;
+      &.continuous {
+        margin-top: 6px !important;
 
         p {
           padding-top: 12px;
@@ -229,15 +238,26 @@ body {
           padding-top: 12px;
         }
 
-        .bubble-arrow {
-          right: -2px;
-          bottom: 40px;
-          left: auto;
+        &.arrow:before {
+          content: none;
         }
 
-        .bubble-arrow:after {
-          border-top-color: #daf9c5;
-          transform: rotate(45deg) scaleY(-1);
+        &.arrow::after {
+          z-index: 1;
+          background-color: #daf9c5;
+          content: "\00a0";
+          display: block;
+          height: 16px;
+          position: absolute;
+          bottom: 11px;
+          transform:         rotate( 0deg ) skew( 50deg );
+          -moz-transform:    rotate( 0deg ) skew( 50deg );
+          -ms-transform:     rotate( 0deg ) skew( 50deg );
+          -o-transform:      rotate( 0deg ) skew( 50deg );
+          -webkit-transform: rotate( 0deg ) skew( 50deg );
+          width: 20px;
+          box-shadow: 1px 1.5px 1px 0 rgba(0, 0, 6, 0.1);
+          right: -9px;
         }
       }
     }
@@ -248,15 +268,4 @@ img {
   max-width: 100%;
   height: auto;
   display: block;
-}
-
-a {
-  color: $color-link-default;
-  text-decoration: none;
-
-  &:hover,
-  &:focus,
-  &:active {
-    color: $color-link-default-hover;
-  }
 }
