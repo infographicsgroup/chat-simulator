@@ -97,3 +97,6 @@ article
 
 ### Time
 The time can have an additional `.up`-class to place it on the same height as the message`s bottom. This might be required if the last line of the text is shorter.
+
+### Find emojis
+The easiest way to find an emoji is on [http://getemoji.com/](http://getemoji.com/). Just copy the desired emoji into the sourcecode.
