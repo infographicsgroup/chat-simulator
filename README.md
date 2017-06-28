@@ -68,11 +68,11 @@ The whole message is placed inside a single `p`-tag. Emojis require an additiona
 
 ```
 p In 2004, Queen Beatrix 
-	em 👑 
-	| of the 
-	em 🇳🇱 
-	| signed the first equal marriage bill.   
-	em 😊
+  em 👑 
+  | of the 
+  em 🇳🇱 
+  | signed the first equal marriage bill.   
+  em 😊
 ```
 
 ### Time
