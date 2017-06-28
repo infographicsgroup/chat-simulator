@@ -76,5 +76,24 @@ p In 2004, Queen Beatrix
   em 😊
 ```
 
+Usually, a line break is not necessary since you can just create a new message. In some cases – like a list – you can still use it like this:
+
+```
+article
+  section.message.wider
+    p 1980 
+      em 👤👤👤👤
+      br
+      | 1990 
+      em 👤👤👤👤👤
+      br
+      | 2000 
+      em 👤👤👤👤👤👤
+      br
+      | 2010 
+      em 👤👤👤👤👤👤👤
+    span 12:29
+```
+
 ### Time
 The time can have an additional `.up`-class to place it on the same height as the message`s bottom. This might be required if the last line of the text is shorter.
