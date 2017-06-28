@@ -5,7 +5,6 @@ const Webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const ExtractSASS = new ExtractTextPlugin('styles/bundle.css');
-// var settings = require("json!yaml!./src/settings.yml");
 
 module.exports = (options) => {
 
@@ -44,6 +43,14 @@ module.exports = (options) => {
       new HtmlWebpackPlugin({
         filename: 'population.html',
         template: "jade!./src/population.jade"
+      }),
+      new HtmlWebpackPlugin({
+        filename: 'marriage.html',
+        template: "jade!./src/marriage.jade"
+      }),
+      new HtmlWebpackPlugin({
+        filename: 'potter.html',
+        template: "jade!./src/potter.jade"
       })
     ],
     module: {
